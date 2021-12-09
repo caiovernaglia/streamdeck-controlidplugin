@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ControlID Property Inspector</title>
+	<link rel="stylesheet" href="css/sdpi.css">
+	<link rel="stylesheet" href="css/property-inspector.css">
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <!-- for more examples of the types of fields supported in property inspector visit:
+            Elgato Github PiSamples -> https://github.com/elgatosf/streamdeck-pisamples
+            and
+            Elgato SDK Documentation -> https://developer.elgato.com/documentation/stream-deck/sdk/property-inspector/
+    -->
+
+        <div class="sdpi-item" id="ip">
+            <div class="sdpi-item-label">IP Terminal</div>
+            <input id="txtIP" class="sdpi-item-value" type="text" inputmode="url" placeholder="Enter IP Address" onchange="setSettings(event.target.value, 'IP')" />
+        </div>
+        <div class="sdpi-item" id="username">
+            <div class="sdpi-item-label">Usuário</div>
+            <input id="txtUsername" class="sdpi-item-value" type="text" placeholder="Usuário" onchange="setSettings(event.target.value, 'Username')" />
+        </div>
+        <div class="sdpi-item" id="password">
+            <div class="sdpi-item-label">Senha</div>
+            <input id="txtPassword" class="sdpi-item-value" type="password" placeholder="Senha" onchange="setSettings(event.target.value, 'Password')" />
+        </div>
+
+    </div>
+	<script src="js/property-inspector.js"></script>
+</body>
+</html>

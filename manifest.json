@@ -1,0 +1,39 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/actionIcon",
+      "Name": "Abertura Remota",
+      "States": [
+        {
+          "Image": "images/actionDefaultImage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Controle Remoto de Abertura Control ID",
+      "UUID": "com.caiovernaglia.controlid.AberturaRemota"
+    }
+  ],
+	"Category": "Control ID",
+	"CategoryIcon": "images/category/categoryIcon",
+	"Disabled":  false,
+	"Author": "Caio Vernaglia",
+	"CodePathWin": "ControlID.exe",
+  "PropertyInspectorPath": "property_inspector/property_inspector.html",
+  "Description": "Permite enviar comando para abertura remota de dispositivos Control ID (ID Flex, ID Access e ID Access PRO)",
+  "Name": "ControlID",
+  "Icon": "images/pluginIcon",
+  "URL": "https://www.elgato.com/gaming/stream-deck",
+  "Version": "1.0",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion":  "4.1"
+	},
+	"OS": [
+    {
+        "Platform": "windows",
+        "MinimumVersion" : "10"
+    }
+  ]
+}
